@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 /* work */
+/* ブラウザのデフォルトスタイルを打ち消し */
 input, select, button {
   appearance: none;
   -webkit-appearance: none;
@@ -72,6 +73,7 @@ input, select, button {
   background: #fbfbfb;
 }
 
+/* 選択状態にある入力フォームをハイライト、RAGAは色と透明度の指定*/
 .input_area:focus {
   background-color: #fff;
   border-color: rgba(93, 130, 194, 0.4);
@@ -87,6 +89,7 @@ input, select, button {
   position: relative;
 }
 
+/* ドロップダウンリストの右側に矢印を表示 */
 .select_unit:after {
   content: "";
   position: absolute;
@@ -99,6 +102,7 @@ input, select, button {
   border-right: 2px solid #c3c3c3;
   transform: rotate(45deg);
 }
+
 
 .gender_element {
   margin-left: 10px;
@@ -128,6 +132,7 @@ input, select, button {
   transform: translateY(-50%);
 }
 
+/* クリック後に青丸の表示 */
 .gender_content:checked+span:after {
   content: "";
   position: absolute;
@@ -157,6 +162,7 @@ input, select, button {
   background: #ffffff;
 }
 
+/* クリック後に青いチェックマークの表示 */
 .subscription_unit input:checked+.subscription_label:after {
   content: "";
   position: absolute;
